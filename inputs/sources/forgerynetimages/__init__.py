@@ -1,0 +1,1 @@
+from .forgerynetimages import ForgeryNetImages

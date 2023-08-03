@@ -1,0 +1,11 @@
+__pycache__
+/.vscode
+/samples
+/scripts
+command.txt
+checkpoints
+tasks/conformal_detection/datasets
+tasks/conformal_detection/conformal_vs_nonconformal_res
+deliverable_graphs
+tasks/conformal_detection/scripts
+inputs/sources/dfdc/index*

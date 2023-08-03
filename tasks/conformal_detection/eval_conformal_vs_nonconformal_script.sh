@@ -1,0 +1,6 @@
+for dset in celebdf dfdc_preview dfdc openforensics ff++raw ff++high
+do
+python -m tasks.conformal_detection.eval_conformal_vs_nonconformal --model-path tasks/checkpoints/conformal_detection/efficientnet_b0/toyforgerynetimages/all/lightning_logs/version_1/checkpoints/epoch=29-step=42000.ckpt --calib-path tasks/conformal_detection/datasets/toyforgerynetimages/all/calib --calibration-qhat 0.5469330549240112 --dset $dset --res-dir model_trained_on_all_forgerynet_cats
+done
+#python -m tasks.conformal_detection.eval_conformal_vs_nonconformal --model-path tasks/checkpoints/conformal_detection/efficientnet_b0/toyforgerynetimages/0_1_11_4_6_7/lightning_logs/version_0/checkpoints/epoch=29-step=15750.ckpt --calib-path tasks/conformal_detection/datasets/toyforgerynetimages/0_1_11_4_6_7/calib --mode test --calibration-qhat 0.1367940902709961 --dset toyforgerynetimages --categories 0 1 4 6 7 11
+#python -m tasks.conformal_detection.eval_conformal_vs_nonconformal --model-path tasks/checkpoints/conformal_detection/efficientnet_b0/toyforgerynetimages/0_1_11_4_6_7/lightning_logs/version_0/checkpoints/epoch=29-step=15750.ckpt --calib-path tasks/conformal_detection/datasets/toyforgerynetimages/0_1_11_4_6_7/calib --mode test --calibration-qhat 0.1367940902709961 --dset toyforgerynetimages --categories 0 2 3 5 8 9 10 12 13 14 15
